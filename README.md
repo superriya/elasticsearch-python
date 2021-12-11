@@ -16,9 +16,9 @@
 
 ### Queries
 -   add documents
-        PUT index_name/_doc
+    -   PUT index_name/_doc
 -   search documents
-        GET index_name/_search
+    -   GET index_name/_search
 
 # Scroll API
 -   By default _search query can fetch 1000 number of documents data
