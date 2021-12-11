@@ -11,7 +11,7 @@
 -   But with the help of Scroll API we found in search query more than 1000's of documents data 
     1.  need to define index_name, query, scroll_time
         - syntax:
-            -   response = my_instance.search(index="kibana_sample_data_flights", body=es_query, scroll="3m")
+            response = my_instance.search(index="kibana_sample_data_flights", body=es_query, scroll="3m")
             
     2.  get scroll id and result
         -   syntax:
@@ -21,6 +21,6 @@
 
     3.  we get all documents data with the help of while loop  
         -   syntax:
-            -   while len(response.get('hits',{}).get('hits')) == max_document_per_search:
+                while len(response.get('hits',{}).get('hits')) == max_document_per_search:
                     response = my_instance.scroll(scroll_id=my_scroll_id, scroll="1m")
                     print(f"found after while{len(response.get('hits',{}).get('hits'))} number of documents")
