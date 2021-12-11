@@ -4,7 +4,21 @@
 -  git commit "first-commit"
 -  git push
 
-### connected python with elasticsearch and work on multiple queries like add documents, search documents for index
+### Connected python with Elasticsearch and work on multiple queries on Index
+
+### Connection between python and elasticsearch
+    my_instance = Elasticsearch(es_host,http_auth=(es_user, es_password),use_ssl=True, verify_certs=False)
+
+    if not my_instance:
+        print("Connection Error")
+    else:
+        print("Connection Successful!")
+
+### Queries
+-   add documents
+        PUT index_name/_doc
+-   search documents
+        GET index_name/_search
 
 # Scroll API
 -   By default _search query can fetch 1000 number of documents data
