@@ -15,9 +15,9 @@
         print("Connection Successful!")
 
 ### Queries
--   add documents
+-   add
     -   PUT index_name/_doc
--   search documents
+-   search 
     -   GET index_name/_search
 
 # Scroll API
