@@ -12,7 +12,7 @@
     1.  need to define index_name, query, scroll_time
         - syntax:
             <!-- -   got response -->
-            response = my_instance.search(index="kibana_sample_data_flights", body=es_query, scroll="3m")
+                response = my_instance.search(index="kibana_sample_data_flights", body=es_query, scroll="3m")
             
     2.  get scroll id and result
         -   syntax:
